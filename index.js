@@ -15,6 +15,13 @@ app.get('/api', async (req, res) =>{
     
 })
 
+app.get('/api/test', async (req, res) =>{
+    try {
+        res.status(200).json("FUNCIONOU API ESTÁ RODANDO")
+    } catch (error){res.status(400).json(error)}
+    
+})
+
 app.get('/api/id/:id', async (req, res) =>{
     try {
         const data = await food.findById(req.params.id)
