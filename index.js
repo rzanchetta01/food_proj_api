@@ -4,7 +4,7 @@ const app = require('./config')
 
 
 const foodSchema = new db.Schema({}, {strict: false})
-const food = db.model('foods2', foodSchema, 'foods2')
+const food = db.model('foods', foodSchema, 'foods')
 
 
 app.get('/api', async (req, res) =>{
