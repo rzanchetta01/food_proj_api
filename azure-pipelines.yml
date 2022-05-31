@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'e13310d1-27ea-4da0-9e95-acb3b091ea3f'
+  dockerRegistryServiceConnection: '1e8f3539-f512-4ccd-945c-b9edde741555'
   imageRepository: 'rzanchettafoodprojapi'
   containerRegistry: 'foodappapi.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/dockerfile'
